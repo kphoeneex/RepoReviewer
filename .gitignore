@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Temp repos (important on Windows)
+backend/temp_repos/
+
+# Environment variables
+.env
