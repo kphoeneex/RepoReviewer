@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>GitGrade – Repository Evaluator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>GitGrade</h1>
+        <p class="subtitle">Evaluate your GitHub repository like a recruiter</p>
+
+        <div class="input-section">
+            <input
+                type="text"
+                id="repoUrl"
+                placeholder="https://github.com/username/repository"
+            />
+            <button id="analyzeBtn">Analyze</button>
+        </div>
+
+        <div id="loader" class="loader hidden">
+            Analyzing repository...
+        </div>
+
+        <div id="results" class="hidden">
+
+            <div class="card">
+                <h2>Score</h2>
+                <div class="score">
+                    <span id="scoreValue">--</span>
+                    <span class="out-of">/ 100</span>
+                </div>
+                <span id="level" class="level">--</span>
+            </div>
+
+            <div class="card">
+                <h2>Summary</h2>
+                <p id="summaryText">
+                    --
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Personalized Roadmap</h2>
+                <ul id="roadmapList">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
